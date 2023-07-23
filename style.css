@@ -7,10 +7,9 @@
 
 body {
     background-color: #040F15;
-    overflow: hidden;
 }
 
-.background::before {
+body::before {
     content: "";
     position: absolute;
     background-image: url("images/ny-bg.jpg");
@@ -23,7 +22,7 @@ body {
     animation: backgroundAnim 5s infinite ease-in-out;
 }
 
-.background::after {
+body::after {
     content: "";
     position: absolute;
     top: 0;
@@ -35,7 +34,6 @@ body {
     height: 100%;
     position: absolute;
     animation: backgroundAnima 5s infinite ease-in-out;
-    overflow: hidden;
 }
 
 @keyframes backgroundAnim {
